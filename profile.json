@@ -1,0 +1,52 @@
+{
+  "name": "苏嘉洋",
+  "motto": "Nothing is impossible to a willing heart.",
+  "introduction": "我是一名对计算机底层架构与系统级优化充满热情的开发者。目前刚硬核通关了 UC Berkeley CS61C (计算机体系结构)，深刻掌握了 CPU 组成原理、内存层次结构（Cache）、指令集（RISC-V/x86）以及底层并发控制。未来，我计划深耕 AI Infra（人工智能基础设施）领域，并以大模型推理引擎（Inference）为主攻方向。我渴望将扎实的底层系统能力（C/C++、内存管理、并行计算）注入到前沿的深度学习系统中，致力于解决大模型推理中的显存墙瓶颈，探索算力压榨的极致。",
+  "contact": {
+    "qq": "2033982912",
+    "email": "366336@whut.edu.cn",
+    "githubUrl": "https://github.com/114514kirito"
+  },
+  "educationHistory": [
+    {
+      "timePeriod": "2024 - 2028",
+      "school": "武汉理工大学",
+      "major": "信息管理与信息系统"
+    },
+    {
+      "timePeriod": "近期",
+      "school": "UC Berkeley (公开课)",
+      "major": "CS61C: Great Ideas in Computer Architecture"
+    }
+  ],
+  "skills": [
+    {
+      "category": "底层与系统语言",
+      "description": "熟练掌握 C / C++，具备良好的指针内存管理能力。"
+    },
+    {
+      "category": "体系结构与硬件",
+      "description": "深入理解 RISC-V 汇编、CPU 五级流水线设计、Cache 映射机制与虚拟内存。"
+    },
+    {
+      "category": "开发环境与工具",
+      "description": "Linux 命令行、Git 版本控制、GDB 调试、Makefile。"
+    },
+    {
+      "category": "进阶方向（学习中）",
+      "description": "并行计算（多线程 / SIMD）、GPU 编程（CUDA 基础了解）、熟悉基本的数据结构与操作系统宏观概念。"
+    }
+  ],
+  "projects": [
+    {
+      "title": "CS61C CPU 设计与底层系统实验",
+      "subtitle": "独立完成 | 深入理解软硬件交界线的基石项目",
+      "description": "基于 RISC-V 指令集架构，从门电路级别到汇编语言级别的全链路实践。",
+      "highlights": [
+        "参与实现单周期 / 流水线 CPU 架构的数据通路设计。",
+        "利用 C 语言完成底层内存管理实验，深入理解并优化 Cache Miss 带来的性能损耗。",
+        "掌握基础的向量化（SIMD）与多线程优化思想，为后续进军 AI 高性能计算打下硬件直觉基础。"
+      ]
+    }
+  ]
+}

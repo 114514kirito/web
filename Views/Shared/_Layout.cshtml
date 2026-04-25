@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - sujiayang</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/sujiayang.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="/Profile#about-me">sujiayang</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Profile#about-me">关于我</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Profile#contact">留言与联系</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 苏嘉洋 · <a href="https://github.com/114514kirito" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 80
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var mottoTarget = document.getElementById("typed-motto");
+            if (!mottoTarget) {
+                return;
+            }
+
+            var mottoText = mottoTarget.getAttribute("data-text") || mottoTarget.textContent.trim();
+            mottoTarget.textContent = "";
+
+            new Typed("#typed-motto", {
+                strings: [mottoText],
+                typeSpeed: 45,
+                startDelay: 300,
+                showCursor: true,
+                cursorChar: "_"
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

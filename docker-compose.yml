@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "80:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DefaultConnection: Data Source=/app/data/sujiayang.db
+    volumes:
+      - ./data:/app/data
